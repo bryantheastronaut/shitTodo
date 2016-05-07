@@ -6,7 +6,11 @@ var List = React.createClass({
   render: function() {
     return (
       <div>
-        These are my to do things
+        <ul>
+          {this.props.items.map(function(item){
+            <li>{item}</li>
+          })}
+        </ul>
       </div>
     );
   }

@@ -1,13 +1,13 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
-var centerText = require('../styles').centerText;
-var bg = require('../styles').background;
+var HeaderStyle = require('../styles').headerStyle;
+
 
 var Header = React.createClass({
 
   render: function() {
     return (
-      <div style={bg}><h1 style={centerText}>Shit To Do (The App)</h1></div>
+      <div style={HeaderStyle}><h1>Shit To Do (The App)</h1></div>
     );
   }
 

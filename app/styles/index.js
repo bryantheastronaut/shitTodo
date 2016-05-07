@@ -1,26 +1,53 @@
 var styles = {
-  centerText: {
-    textAlign: 'center'
+  bodyStyles: {
+    backgroundColor:'#808080',
+    color:'white',
+    fontFamily:'Helvetica, sans-serif',
+    textAlign:'center',
+    height:'100vh'
+  },
+  headerStyle: {
+    backgroundColor: 'white',
+    color:'black',
+    height:'100px',
+    paddingTop:'10px',
+    borderBottom: '2px solid #e2e2e2'
   },
   background: {
     backgroundColor: '#c4c4c4',
     height: '200px',
     borderRadius: '30px',
-    color: 'white',
     paddingTop: '80px'
+  },
+  formBox: {
+    display: 'block',
+    marginTop:'50px'
   },
   inputBar: {
     width:'65%',
-    height: '35px',
-    borderRadius: '10px',
-    display: 'block',
-    margin: '25px auto'
+    height: '50px',
+    color:'black',
+    fontSize: '1.75rem',
+    border:'none',
+    letterSpacing: '.1rem',
+    borderRadius: '50px 1px 1px 50px',
+    display: 'inline',
+    paddingLeft: '15px'
+  },
+  'inputBar:focus': {
+    outline:'none'
   },
   buttonStyle: {
-    display:'block',
-    height: '35px',
+    display: 'inline',
+    border:'none',
+    textShadow:'1px 1px 1px black',
+    borderRadius:'1px 50px 50px 1px',
+    fontWeight:'400',
+    fontSize: '1.75rem',
+    letterSpacing:'.1rem',
+    height: '50px',
     width:'15%',
-    backgroundColor: 'green'
+    backgroundColor: '#5CB85C'
   }
 };
 
