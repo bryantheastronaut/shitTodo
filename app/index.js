@@ -22,6 +22,7 @@ var App = React.createClass({
     e.preventDefault();
     this.setState({ items: this.state.items.concat(this.state.text) });
     document.getElementById('todoInput').value='';
+    this.setState({ text: ''})
   },
   render: function() {
     return (
@@ -34,7 +35,9 @@ var App = React.createClass({
           onChange={this.handleChange}
           onItemSubmit={this.handleSubmit}
         />
-        <List itemList={this.state.items}/>
+        <List
+          itemList={this.state.items}
+        />
       </div>
     )
   }

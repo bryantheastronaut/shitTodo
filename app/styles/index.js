@@ -21,7 +21,8 @@ var styles = {
   },
   formBox: {
     display: 'block',
-    marginTop:'50px'
+    marginTop:'50px',
+    marginBottom:'100px'
   },
   inputBar: {
     width:'65%',
@@ -34,9 +35,6 @@ var styles = {
     display: 'inline',
     paddingLeft: '15px'
   },
-  'inputBar:focus': {
-    outline:'none'
-  },
   buttonStyle: {
     display: 'inline',
     border:'none',
@@ -48,6 +46,25 @@ var styles = {
     height: '50px',
     width:'15%',
     backgroundColor: '#5CB85C'
+  },
+  deleteButton: {
+    border:'none',
+    float:'left',
+    marginLeft:'2%',
+    width: '30px',
+    height: '30px',
+    borderRadius:'11px',
+    backgroundColor: 'red',
+    color: 'white'
+  },
+  finishButton: {
+    border:'none',
+    float:'right',
+    marginRight:'7%',
+    width:'30px',
+    height:'30px',
+    borderRadius:'11px',
+    backgroundColor:'#5CB85C'
   },
   listStyle: {
     listStyle: 'none',
