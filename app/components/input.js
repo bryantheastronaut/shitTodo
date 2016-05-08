@@ -6,12 +6,12 @@ var SubmitStyle = require('../styles').buttonStyle;
 var FormBox = require('../styles').formBox;
 
 var Input = React.createClass({
-
   render: function() {
     return (
       <div>
       <form style={FormBox}>
         <input
+          id='todoInput'
           style={InputBar}
           type="text"
           placeholder="type here..."
@@ -19,10 +19,10 @@ var Input = React.createClass({
         />
         <button
           style={SubmitStyle}
-          type="button"
-          onClick={this.props.onSubmit}>
-            Submit
-          </button>
+          onClick={this.props.onItemSubmit}
+        >
+          Submit
+        </button>
       </form>
       </div>
     );

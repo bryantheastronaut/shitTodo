@@ -18,24 +18,23 @@ var App = React.createClass({
       text: e.target.value
     })
   },
-  handleSubmit: function(e) {
+  handleSubmit: function(e){
     e.preventDefault();
-    let newText = this.state.text;
-    this.setState({
-      items: this.state.items.concat({newText})
-    })
+    this.setState({ items: this.state.items.concat(this.state.text) });
+    document.getElementById('todoInput').value='';
   },
   render: function() {
     return (
       <div style={BodyStyle}>
         <Header />
-        <Input />
-        <List
-          onSubmit={this.handleSubmit}
+        <hr />
+        {this.state.text}
+        <hr />
+        <Input
           onChange={this.handleChange}
-          text={this.state.text}
-          items={this.state.items}
+          onItemSubmit={this.handleSubmit}
         />
+        <List itemList={this.state.items}/>
       </div>
     )
   }

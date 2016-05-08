@@ -48,6 +48,16 @@ var styles = {
     height: '50px',
     width:'15%',
     backgroundColor: '#5CB85C'
+  },
+  listStyle: {
+    listStyle: 'none',
+    marginTop:'20px',
+    fontSize:'1.7rem'
+  },
+  itemStyle: {
+    paddingTop: '10px',
+    textTransform: 'uppercase',
+    letterSpacing:'.06rem'
   }
 };
 

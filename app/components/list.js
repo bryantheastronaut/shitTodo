@@ -1,18 +1,17 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
+var ListStyle = require('../styles').listStyle;
+var ItemStyle = require('../styles').itemStyle;
 
 var List = React.createClass({
-
   render: function() {
     return (
-      <div>
-        <ul>
-          {this.props.items.map(function(item){
-            <li>{item}</li>
+        <ul style={ListStyle}>
+          {this.props.itemList.map(function(anItem, index){
+            return <li key={index} style={ItemStyle}>{anItem}</li>
           })}
         </ul>
-      </div>
-    );
+    )
   }
 
 });
