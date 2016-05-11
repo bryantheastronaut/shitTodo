@@ -7,23 +7,18 @@ var DeleteButton = require('../styles').deleteButton;
 
 var List = React.createClass({
   render: function() {
+    let remove = this.props.removeTodo;
     return (
         <ul style={ListStyle}>
           {this.props.itemList.map(function(anItem, index){
             return <li key={index} style={ItemStyle}>
               <button
                 style={DeleteButton}
-                class='delete'
+                onClick={remove.bind(this, anItem)}
               >
                 X
               </button>
               {anItem}
-              <button
-                style={FinishButton}
-                class='finish'
-              >
-                :)
-              </button>
             </li>
           })}
         </ul>

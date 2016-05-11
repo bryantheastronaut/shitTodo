@@ -8,10 +8,10 @@ var styles = {
   },
   headerStyle: {
     backgroundColor: 'white',
-    color:'black',
-    height:'100px',
-    paddingTop:'10px',
-    borderBottom: '2px solid #e2e2e2'
+    width:'100%'
+  },
+  imageStyle: {
+    width:'50%'
   },
   background: {
     backgroundColor: '#c4c4c4',
@@ -57,22 +57,13 @@ var styles = {
     backgroundColor: 'red',
     color: 'white'
   },
-  finishButton: {
-    border:'none',
-    float:'right',
-    marginRight:'7%',
-    width:'30px',
-    height:'30px',
-    borderRadius:'11px',
-    backgroundColor:'#5CB85C'
-  },
   listStyle: {
     listStyle: 'none',
-    marginTop:'20px',
+    marginTop:'-70px',
     fontSize:'1.7rem'
   },
   itemStyle: {
-    paddingTop: '10px',
+    paddingTop: '20px',
     textTransform: 'uppercase',
     letterSpacing:'.06rem'
   }

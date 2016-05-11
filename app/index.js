@@ -24,19 +24,23 @@ var App = React.createClass({
     document.getElementById('todoInput').value='';
     this.setState({ text: ''})
   },
+  removeTodo: function(item){
+    let fList = this.state.items.filter(function(itm){
+      return item !== itm;
+    });
+    this.setState({ items: fList })
+  },
   render: function() {
     return (
       <div style={BodyStyle}>
         <Header />
-        <hr />
-        {this.state.text}
-        <hr />
         <Input
           onChange={this.handleChange}
           onItemSubmit={this.handleSubmit}
         />
         <List
           itemList={this.state.items}
+          removeTodo={this.removeTodo}
         />
       </div>
     )
