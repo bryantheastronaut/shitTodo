@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js",
-    "production": "webpack -p",
-    "start": "webpack-dev-server"
+    "production": "webpack -p"
   },
   "author": "",
   "license": "ISC",
