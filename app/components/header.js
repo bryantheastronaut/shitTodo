@@ -8,7 +8,7 @@ var Header = React.createClass({
 
   render: function() {
     return (
-      <div style={HeaderStyle}><img style={ImageStyle} src="../../images/shittodoHeader.jpg" alt="header"/></div>
+      <div style={HeaderStyle}><img style={ImageStyle} src="../app/images/shittodoHeader.jpg" alt="header"/></div>
     );
   }
 

@@ -20389,7 +20389,7 @@
 	    return React.createElement(
 	      'div',
 	      { style: HeaderStyle },
-	      React.createElement('img', { style: ImageStyle, src: '../images/shittodoHeader.jpg', alt: 'header' })
+	      React.createElement('img', { style: ImageStyle, src: '../app/images/shittodoHeader.jpg', alt: 'header' })
 	    );
 	  }
 
