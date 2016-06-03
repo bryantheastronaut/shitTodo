@@ -7,9 +7,9 @@
     "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js",
     "production": "webpack -p",
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
-    "start": "node ./src/app.js",
+    "start": "webpack-dev-server",
     "dist": "webpack -p",
-    "postinstall": "npm run dist",
+    "postinstall": "npm run dist"
   },
   "author": "",
   "license": "ISC",
